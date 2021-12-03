@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota dos Alunos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form method="post">
+        <input type="number" id="numero">
+        <button onclick="teste()" name="myButton" form="notaDoAluno">Ver nota</button>
+    </form>
+    <script type="text/javascript">
+        function teste() {
+            let nota = parseFloat(document.getElementById("numero").value);
+
+            if (nota >= 90) {
+                alert("Nota A")
+            } else if (nota >= 80) {
+                alert("Nota B")
+            } else if (nota >= 70) {
+                alert("Nota C")
+            } else if (nota >= 60) {
+                alert("Nota D")
+            } else if (nota < 60) {
+                alert("Nota F")
+            }
+        }
+    </script>
+
+    <div id="result"></div>
+
+</body>
+
+</html>

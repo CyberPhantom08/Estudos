@@ -93,7 +93,7 @@ try {
 
 const booksByCategory = [
     {
-        category: "Riqueza",
+        titleOfCategory: "Riqueza",
         books: [
             {
                 title: "Os segredos da mente milionária",
@@ -107,10 +107,14 @@ const booksByCategory = [
                 title: "Pai rico, pai pobre",
                 author: "Robert T. Kiyosaki e Sharon L. Lechter",
             },
+            {
+                title: "O guia de investimentos: aprenda a ganhar dinheiro investindo como os ricos",
+                author: "Robert T. Kiyosaki e Sharon L. Lechter",
+            },
         ],
     },
     {
-        category: "Inteligência Emocional",
+        titleOfCategory: "Inteligência Emocional",
         books: [
             {
                 title: "Você é insubstituível",
@@ -128,17 +132,86 @@ const booksByCategory = [
     },
 ];
 
+
 const totalCategories = booksByCategory.length;
 
-for(let category in booksByCategory) {
-    console.log(category)
-} 
+console.log(totalCategories);
+for (let category of booksByCategory) {
+    console.log("Total de livors da categoria: :", category.category)
+        console.log(category.books.length)
+}
 
-console.log("oi")
+
+function countAuthors() {
+    let authors = [];
+
+    for (let category of booksByCategory) {
+        for (let book of category.books) {
+            if (authors.indexOf(book.author) == -1) {
+                authors.push(book.author)
+            }
+        }
+    }
+    console.log("Total de autores: ", authors.length)
+}
+
+countAuthors();
+
+function booksOfAuthor(author) {
+    let books = [];
+
+    for (let category of booksByCategory) {
+        for (let book of category.books) {
+            if (book.author === author) {
+               books.push(book.title)
+            }
+        }
+    }
+    console.log(`Livros do autor ${author}: ${books.join(", ")}`)
+}
+
+booksOfAuthor('Augusto Cury');
+
+
+
+
+
+
+
+
+// let authorsAux = []
 
 // for (let category of booksByCategory) {
-//     console.log(category)
+//     for (let books of category.books) {
+//         console.log(books.author)
+//         let isToAdd = true;
+//         for (let authorAux of authorsAux) {
+//             if (books.author === authorAux) {
+//                 isToAdd = false
+//             }
+//         }
+//         if (isToAdd) {
+//             authorsAux.push(books.author);
+//         }
+
+//     }
 // }
+
+// for (let category in booksByCategory) {
+//     for (let books in category.books) {
+//         console.log(books)
+//         for (let author of books) {
+//             if (books.author === "Augusto Cury") {
+//                 console.log(books.title)
+//             }
+//         }
+
+//     }
+// }
+
+// console.log(authorsAux)
+
+
 
 
 

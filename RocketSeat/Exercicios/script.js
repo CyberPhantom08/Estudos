@@ -128,8 +128,33 @@ const booksByCategory = [
     },
 ];
 
-const totalCategories = booksByCategory.length
+const totalCategories = booksByCategory.length;
 
-for(let category of booksByCategory) {
-    console.log(category)
+for(let category in booksByCategory) {
+    console.log(category.length)
 }
+
+console.log(category)
+
+console.log("oi")
+// for (let category of booksByCategory) {
+//     console.log(category)
+// }
+
+
+
+
+
+
+
+// let i = totalCategories;
+// for (i; i > 0; i--) {
+//     let category = booksByCategory[i];
+// }
+
+// for (let i = 0; i < totalCategories; i++) {
+//     let category = booksByCategory[i];
+//     console.log("Category:", category);
+// }
+
+

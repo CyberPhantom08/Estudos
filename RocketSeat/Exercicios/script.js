@@ -12,16 +12,16 @@ if (nota >= 90) {
     console.log("Nota F")
 }
 
-let receitas = [2100 + 2000]
-let despesas = [4500]
-for (let property in receitas && despesas) {
-    console.log(receitas - despesas[property])
-    if (receitas - despesas[property] >= 0) {
-        console.log('Saldo positivo')
-    } else if (receitas - despesas[property] <= 0) {
-        console.log('Saldo negativo')
-    }
-}
+// let receitas = [2100 + 2000]
+// let despesas = [4500]
+// for (let property in receitas && despesas) {
+//     console.log(receitas - despesas[property])
+//     if (receitas - despesas[property] >= 0) {
+//         console.log('Saldo positivo')
+//     } else if (receitas - despesas[property] <= 0) {
+//         console.log('Saldo negativo')
+//     }
+// }
 
 // Correção
 let family = {
@@ -131,12 +131,11 @@ const booksByCategory = [
 const totalCategories = booksByCategory.length;
 
 for(let category in booksByCategory) {
-    console.log(category.length)
-}
-
-console.log(category)
+    console.log(category)
+} 
 
 console.log("oi")
+
 // for (let category of booksByCategory) {
 //     console.log(category)
 // }

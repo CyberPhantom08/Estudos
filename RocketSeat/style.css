@@ -22,6 +22,10 @@ img {
     margin: 0 auto;
 }
 
+.teste1:hover {
+    color: red;
+}
+
 
 /*.primeiro{
     border: solid orangered;

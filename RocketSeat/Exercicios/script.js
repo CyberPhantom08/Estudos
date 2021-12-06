@@ -135,10 +135,10 @@ const booksByCategory = [
 
 const totalCategories = booksByCategory.length;
 
-console.log(totalCategories);
+console.log(totalCategories); //2
 for (let category of booksByCategory) {
-    console.log("Total de livors da categoria: :", category.category)
-        console.log(category.books.length)
+    console.log("Total de livors da categoria: :", category.titleOfCategory)
+    console.log(category.books.length)
 }
 
 
@@ -163,7 +163,7 @@ function booksOfAuthor(author) {
     for (let category of booksByCategory) {
         for (let book of category.books) {
             if (book.author === author) {
-               books.push(book.title)
+                books.push(book.title)
             }
         }
     }
@@ -210,14 +210,6 @@ booksOfAuthor('Augusto Cury');
 // }
 
 // console.log(authorsAux)
-
-
-
-
-
-
-
-
 
 // let i = totalCategories;
 // for (i; i > 0; i--) {

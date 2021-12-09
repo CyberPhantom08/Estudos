@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 800px;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0)
+}
+
+img {
+    object-fit: cover;
+    height: 500px;
+    width: 800px;
+}
+
+header{
+    display: flex;
+    background: chartreuse;
+    height: 8rem;
+    width: 100%;
+}
+
+header a {
+    justify-content: left;
+    align-items: center;
+
+}
+header ul li {
+    gap: 0.8rem;
+    justify-content: right;
+    align-items: center;
+}
+
+header ul:last-child li {
+    background: blue;
+}

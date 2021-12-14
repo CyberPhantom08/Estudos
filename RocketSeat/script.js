@@ -126,9 +126,9 @@ console.log(!pao)
 
 let temperature = 36.9
 
-if(temperature >= 37) {
+if (temperature >= 37) {
     console.log("Febre alta")
-} else if(temperature < 37.5 && temperature >= 37) {
+} else if (temperature < 37.5 && temperature >= 37) {
     console.log("Febre moderada")
 } else {
     console.log("Saudável")
@@ -136,24 +136,24 @@ if(temperature >= 37) {
 
 let expression = 'a'
 
- switch (expression) {
-     case 'a':
-         //codigo
-         console.log('a')
-         break
+switch (expression) {
+    case 'a':
+        //codigo
+        console.log('a')
+        break
     case 'b':
         console.log('b')
         break
     // default:
     //     console.log (default)
     //     break
- }
+}
 
- function calculate(number1, operator, number2) {
-     let result = 0;
+function calculate(number1, operator, number2) {
+    let result = 0;
 
-     switch (operator) {
-         case '+':
+    switch (operator) {
+        case '+':
             result = number1 + number2
             break
         case '-':
@@ -168,16 +168,16 @@ let expression = 'a'
         default:
             console.log('não implementado')
             break
-     }
+    }
 
-     return result
- }
+    return result
+}
 
- console.log(calculate(4, '+', 8))
+console.log(calculate(4, '+', 8))
 
 //throw
 function sayMyName(name = '') {
-    if (name === ''){
+    if (name === '') {
         throw new Error("Nome é obrigatório")
     }
 }
@@ -186,7 +186,7 @@ function sayMyName(name = '') {
 try {
     sayMyName()
 
-} catch(e) {
+} catch (e) {
     console.log(e)
 }
 
@@ -204,16 +204,16 @@ console.log('após a função de erro')
 
 //while
 let i = 40
-while(i > 10) {
+while (i > 10) {
     console.log(i)
-    i/= 20
+    i /= 20
 }
 
 //for...of
 let name = 'Trick'
 let names = ['Pedro', 'Rober', 'Pablo']
 
-for(let name of names) {
+for (let name of names) {
     console.log(name)
 }
 
@@ -223,7 +223,7 @@ let person = {
     age: 30,
     weight: 88.6,
 }
-for(let property in person) {
+for (let property in person) {
     console.log(property)
     console.log(person[property])
 }

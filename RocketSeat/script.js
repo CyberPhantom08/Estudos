@@ -42,13 +42,13 @@ techs.push("nodejs")
 //adicionar no começo
 techs.unshift("sql")
 //remover no fim
-//techs.pop()
+techs.pop()
 //remover no começo
-//techs.shift()
+techs.shift()
 //pegar somente alguns elementos do Array
-//console.log(techs.slice(1, 3))
+console.log(techs.slice())
 //removar 1 ou mais itens em qualquer posição do Array
-//techs.splice(1, 3)
+techs.splice()
 //encontrar a posição de um elemnto no Array
 let index = techs.indexOf('html')
 techs.splice(index, 1)
@@ -236,14 +236,10 @@ function Character(name) {
     this.name = name
 }
 
-inherits(Character, EventEmitter)
+util.inherits(Character, EventEmitter)
 
 const chapolin = new Character('Chapolin');
 chapolin.on('help', () => console.log(`Eu! O ${chapolin.name} colorado!`))
 
 console.log('Oh! E agora, quem poderá me defender?')
 chapolin.emit('help')
-
-
-
-

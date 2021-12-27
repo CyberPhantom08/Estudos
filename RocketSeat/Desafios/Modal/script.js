@@ -2,16 +2,19 @@ const buttonOpenModal = document.getElementById('openModal')
 const modalWrapper = document.querySelector('.modal-wraper')
 
 
-buttonOpenModal.onclick = function() {
+buttonOpenModal.onclick = function () {
     modalWrapper
         .classList
         .remove('invisible')
 }
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     const isEscKey = event.key === 'Escape'
 
     if (isEscKey) {
         modalWrapper.classList.add('invisible')
     }
 })
+
+const square = n => n * n;
+
